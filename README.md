@@ -74,3 +74,9 @@ brainstorms
     - create container
     - run command in container
     - copy result out of container
+    -
+
+
+  - job runner
+    - i wonder if task spooler could handle all the job running parts for me, lol
+    -
