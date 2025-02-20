@@ -31,6 +31,8 @@ the core of a cicd daemon
   - trigger via git push
 
 configuration
+- main config should come from git
+  - provides a good mechanism of config reload
 - configuration comes from a 'buildscript' in source dir or git repo
   - a remote git repo
     - git clone a repo is complicated but simple in concept
