@@ -31,6 +31,11 @@ the core of a cicd daemon
   - trigger via git push
 
 configuration
+- configuration comes from a 'buildscript' in source dir or git repo
+  - a remote git repo
+    - git clone a repo is complicated but simple in concept
+  - a directory
+  - anything really
 - configuration reload
   - how does a job config get reloaded
 
