@@ -81,3 +81,6 @@ brainstorms
   - job runner
     - i wonder if task spooler could handle all the job running parts for me, lol
     -
+
+libraries
+- git plumbing - https://github.com/go-git/go-git/tree/main
