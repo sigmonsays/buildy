@@ -18,7 +18,8 @@ the core of a cicd daemon
 
 - job runner
   - takes a jobspec and runs it
-  -
+  - given a job name, returns the list of runs
+  - given a job name, returns log file locations
 
 - get output of job
   - job runner logs to file on disk
@@ -26,14 +27,30 @@ the core of a cicd daemon
 
 - trigger job
   - trigger externally
+  - trigger on timer (to do later)
   - trigger via git push
 
-http api
+configuration
+- configuration reload
+  - how does a job config get reloaded
 
+on disk
+ /etc/buildy/config.yaml
+ - main daemons config
+ - defines jobs dir, ie /srv/buildy/jobs
+
+job /srv/buildy/jobs/[job id]/
+    run/
+
+http api
 - /buildy/job/[job name]
   - POST: Create job
   - DELETE: Delete Job
-  -
+
+- /buildy/job/[job name]/run
+  - run a job
+  - POST: Trigger job run
+
 - /buildy/job/[job name id]/output/raw
   - GET
     - read job output
@@ -45,6 +62,7 @@ brainstorms
     - env variables
     - current working directory
     - run as user
+    - timeout
   - containers
     - create container
     - run command in container
