@@ -29,6 +29,7 @@ the core of a cicd daemon
   - trigger externally
   - trigger on timer (to do later)
   - trigger via git push
+  - trigger via webhook
 
 configuration
 - main config should come from git
